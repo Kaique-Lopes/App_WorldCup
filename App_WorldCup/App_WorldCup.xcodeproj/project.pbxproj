@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		7CB7601C27068D9E006560BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7601B27068D9E006560BB /* AppDelegate.swift */; };
 		7CB7601E27068D9E006560BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7601D27068D9E006560BB /* SceneDelegate.swift */; };
-		7CB7602027068D9E006560BB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7601F27068D9E006560BB /* ViewController.swift */; };
 		7CB7602327068D9E006560BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7602127068D9E006560BB /* Main.storyboard */; };
 		7CB7602527068DA1006560BB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7602427068DA1006560BB /* Assets.xcassets */; };
 		7CB7602827068DA1006560BB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7602627068DA1006560BB /* LaunchScreen.storyboard */; };
@@ -66,6 +65,8 @@
 		7CB760AC27069016006560BB /* Argélia.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7607B27069016006560BB /* Argélia.png */; };
 		7CB760AD27069016006560BB /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7607C27069016006560BB /* China.png */; };
 		7CB760AF27069022006560BB /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CB760AE27069022006560BB /* winners.json */; };
+		7CB760B42706939E006560BB /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B32706939E006560BB /* WinnersTableViewController.swift */; };
+		7CB760B6270693B0006560BB /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B5270693B0006560BB /* WorldCupViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,7 +90,6 @@
 		7CB7601827068D9E006560BB /* App_WorldCup.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App_WorldCup.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7CB7601B27068D9E006560BB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7CB7601D27068D9E006560BB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		7CB7601F27068D9E006560BB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		7CB7602227068D9E006560BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7CB7602427068DA1006560BB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7CB7602727068DA1006560BB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -149,6 +149,8 @@
 		7CB7607B27069016006560BB /* Argélia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Argélia.png"; path = "../../../../../../Downloads/Arquivos CampeoesDaCopa/Bandeiras/Argélia.png"; sourceTree = "<group>"; };
 		7CB7607C27069016006560BB /* China.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = China.png; path = "../../../../../../Downloads/Arquivos CampeoesDaCopa/Bandeiras/China.png"; sourceTree = "<group>"; };
 		7CB760AE27069022006560BB /* winners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = winners.json; path = "../../../../../../Downloads/Arquivos CampeoesDaCopa/winners.json"; sourceTree = "<group>"; };
+		7CB760B32706939E006560BB /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
+		7CB760B5270693B0006560BB /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -199,13 +201,13 @@
 		7CB7601A27068D9E006560BB /* App_WorldCup */ = {
 			isa = PBXGroup;
 			children = (
+				7CB760B02706930F006560BB /* Models */,
+				7CB760B12706931B006560BB /* Views */,
+				7CB760B227069327006560BB /* Controllers */,
 				7CB7604B27068FF1006560BB /* Files */,
 				7CB7601B27068D9E006560BB /* AppDelegate.swift */,
 				7CB7601D27068D9E006560BB /* SceneDelegate.swift */,
-				7CB7601F27068D9E006560BB /* ViewController.swift */,
-				7CB7602127068D9E006560BB /* Main.storyboard */,
 				7CB7602427068DA1006560BB /* Assets.xcassets */,
-				7CB7602627068DA1006560BB /* LaunchScreen.storyboard */,
 				7CB7602927068DA1006560BB /* Info.plist */,
 			);
 			path = App_WorldCup;
@@ -283,6 +285,31 @@
 				7CB7605127069015006560BB /* Uruguai.png */,
 			);
 			path = Files;
+			sourceTree = "<group>";
+		};
+		7CB760B02706930F006560BB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7CB760B12706931B006560BB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7CB7602627068DA1006560BB /* LaunchScreen.storyboard */,
+				7CB7602127068D9E006560BB /* Main.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7CB760B227069327006560BB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7CB760B32706939E006560BB /* WinnersTableViewController.swift */,
+				7CB760B5270693B0006560BB /* WorldCupViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -466,8 +493,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CB7602027068D9E006560BB /* ViewController.swift in Sources */,
+				7CB760B42706939E006560BB /* WinnersTableViewController.swift in Sources */,
 				7CB7601C27068D9E006560BB /* AppDelegate.swift in Sources */,
+				7CB760B6270693B0006560BB /* WorldCupViewController.swift in Sources */,
 				7CB7601E27068D9E006560BB /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
