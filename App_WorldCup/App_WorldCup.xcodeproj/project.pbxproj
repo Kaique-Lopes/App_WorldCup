@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7C8E372527078C6A00FBE5F7 /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CB760AE27069022006560BB /* winners.json */; };
 		7CB7601C27068D9E006560BB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7601B27068D9E006560BB /* AppDelegate.swift */; };
 		7CB7601E27068D9E006560BB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB7601D27068D9E006560BB /* SceneDelegate.swift */; };
 		7CB7602327068D9E006560BB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7602127068D9E006560BB /* Main.storyboard */; };
@@ -64,7 +65,6 @@
 		7CB760AB27069016006560BB /* Noruega.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7607A27069016006560BB /* Noruega.png */; };
 		7CB760AC27069016006560BB /* Argélia.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7607B27069016006560BB /* Argélia.png */; };
 		7CB760AD27069016006560BB /* China.png in Resources */ = {isa = PBXBuildFile; fileRef = 7CB7607C27069016006560BB /* China.png */; };
-		7CB760AF27069022006560BB /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CB760AE27069022006560BB /* winners.json */; };
 		7CB760B42706939E006560BB /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B32706939E006560BB /* WinnersTableViewController.swift */; };
 		7CB760B6270693B0006560BB /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B5270693B0006560BB /* WorldCupViewController.swift */; };
 		7CB760B8270693E3006560BB /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B7270693E3006560BB /* WorldCup.swift */; };
@@ -443,7 +443,7 @@
 				7CB7607E27069016006560BB /* Bulgária.png in Resources */,
 				7CB7607F27069016006560BB /* Estados Unidos.png in Resources */,
 				7CB7609A27069016006560BB /* Chile.png in Resources */,
-				7CB760AF27069022006560BB /* winners.json in Resources */,
+				7C8E372527078C6A00FBE5F7 /* winners.json in Resources */,
 				7CB7608327069016006560BB /* União Soviética.png in Resources */,
 				7CB7608727069016006560BB /* México.png in Resources */,
 				7CB7609927069016006560BB /* Croácia.png in Resources */,
