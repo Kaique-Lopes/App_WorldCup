@@ -67,6 +67,7 @@
 		7CB760AF27069022006560BB /* winners.json in Resources */ = {isa = PBXBuildFile; fileRef = 7CB760AE27069022006560BB /* winners.json */; };
 		7CB760B42706939E006560BB /* WinnersTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B32706939E006560BB /* WinnersTableViewController.swift */; };
 		7CB760B6270693B0006560BB /* WorldCupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B5270693B0006560BB /* WorldCupViewController.swift */; };
+		7CB760B8270693E3006560BB /* WorldCup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CB760B7270693E3006560BB /* WorldCup.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,7 @@
 		7CB760AE27069022006560BB /* winners.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = winners.json; path = "../../../../../../Downloads/Arquivos CampeoesDaCopa/winners.json"; sourceTree = "<group>"; };
 		7CB760B32706939E006560BB /* WinnersTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WinnersTableViewController.swift; sourceTree = "<group>"; };
 		7CB760B5270693B0006560BB /* WorldCupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCupViewController.swift; sourceTree = "<group>"; };
+		7CB760B7270693E3006560BB /* WorldCup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorldCup.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -290,6 +292,7 @@
 		7CB760B02706930F006560BB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				7CB760B7270693E3006560BB /* WorldCup.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -495,6 +498,7 @@
 			files = (
 				7CB760B42706939E006560BB /* WinnersTableViewController.swift in Sources */,
 				7CB7601C27068D9E006560BB /* AppDelegate.swift in Sources */,
+				7CB760B8270693E3006560BB /* WorldCup.swift in Sources */,
 				7CB760B6270693B0006560BB /* WorldCupViewController.swift in Sources */,
 				7CB7601E27068D9E006560BB /* SceneDelegate.swift in Sources */,
 			);
