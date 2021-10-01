@@ -8,7 +8,7 @@
 import Foundation
 
 struct WorldCup: Codable{
-    let year: String
+    let year: Int
     let country: String
     let winner: String
     let vice: String
@@ -28,16 +28,3 @@ struct Game: Codable{
     let score: String
     let date: String
 }
-
-
-
-
-//"year": 2014,
-//"country": "Brasil",
-//"winner": "Alemanha",
-//"vice": "Argentina",
-//"winnerScore": "1",
-//"viceScore": "0",
-//"matches": [{
-//        "stage": "Fase de grupos",
-//        "games": [{
