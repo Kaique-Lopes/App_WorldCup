@@ -8,7 +8,7 @@
 import UIKit
 
 class WinnersTableViewController: UITableViewController {
-
+    
     var worldCups: [WorldCup] = []
     
     override func viewDidLoad() {
@@ -17,7 +17,6 @@ class WinnersTableViewController: UITableViewController {
     }
     
     // MARK: - Function Loading World Cups
-    
     func loadWorldCups() {
         let fileURL = Bundle.main.url(forResource: "winners.json", withExtension: nil)!
         let jsonData = try! Data(contentsOf: fileURL)
@@ -26,23 +25,25 @@ class WinnersTableViewController: UITableViewController {
         } catch {
             print(error.localizedDescription)
         }
-    
     }
-
+    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return worldCups.count
     }
-
+    
     // MARK: - Cell
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        var cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
         let worldCup = worldCups[indexPath.row]
+        cell = UITableViewCell.init(style: .subtitle, reuseIdentifier: "cell")
+        
+        cell.backgroundColor = UIColor.cyan
+        cell.textLabel?.textColor = UIColor.blue
+        cell.detailTextLabel?.textAlignment = .left
+        cell.detailTextLabel?.textColor = UIColor.gray
         cell.textLabel?.text = "Copas \(worldCup.year) - \(worldCup.country)"
         cell.detailTextLabel?.text = "\(worldCup.winner) vs \(worldCup.vice)"
         cell.imageView?.image = UIImage(named: "\(worldCup.winner).png")
         return cell
     }
-    
-    
-
 }
